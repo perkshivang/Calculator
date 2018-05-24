@@ -28,5 +28,11 @@ pipeline{
 		        sh "xcodebuild -exportArchive -archivePath 'Build/CalculatorSample.xcarchive' -exportPath 'Build/' -exportOptionsPlist 'CalculatorSample/ExportOptions.plist'"  
 		    }
 		}
+		stage("Distribute Build"){
+		steps{
+		    echo 'build has been distributed..'
+		}
+		}
+		
 	}
 }
