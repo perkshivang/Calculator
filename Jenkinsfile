@@ -1,6 +1,8 @@
 pipeline{
 	agent {
-		dockerfile true
+		 docker {
+                   image 'davidthornton/node6-cocoapods'
+		}
 	}
 	stages{
 		stage("Checkout"){
