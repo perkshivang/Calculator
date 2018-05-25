@@ -1,7 +1,7 @@
 FROM node:6
 
 # Upgrade yarn
-RUN npm install --global yarn@1.3.2
+#RUN npm install --global yarn@1.3.2
 
 # Add ruby and cocoapods
 RUN apt-get update
