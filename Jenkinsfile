@@ -1,6 +1,6 @@
 pipeline{
 	agent {
-	 	docker { image 'luckytianyiyan/cocoapods' }
+	 	 agent { dockerfile true }
 	}
 	stages{
 		stage("Checkout"){
