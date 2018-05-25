@@ -1,12 +1,19 @@
 FROM ruby:2.4
 
-MAINTAINER thinkbot@outlook.de
+MAINTAINER luckytianyiyan@gmail.com
 
-ENV VERSION=1.5.2
+ENV COCOAPODS_VERSION 1.5.2
 
-RUN gem install cocoapods --version ${VERSION} --no-format-exec
+RUN gem install cocoapods --version ${COCOAPODS_VERSION}
 
-WORKDIR /tmp
+WORKDIR /
 
-ENTRYPOINT ["pod"]
-CMD ["--help"]
+# Setup worker user
+RUN useradd -m -p secret worker && \
+    chsh -s /bin/bash worker
+
+USER worker
+
+VOLUME '~/.cocoapods'
+
+CMD ["pod"]
