@@ -21,7 +21,7 @@ pipeline{
 
 		stage("Compile"){
 		    steps{
-		       sh "xcrun xcodebuild -project 'CalculatorSample/CalculatorSample.xcodeproj' -scheme 'CalculatorSample' archive -archivePath 'Build/CalculatorSample'"
+		       sh "xcrun xcodebuild -workspace 'CalculatorSample/CalculatorSample.xcworkspace' -scheme 'CalculatorSample' archive -archivePath 'Build/CalculatorSample'"
 		    }
 		}
 		stage("Unit Test"){
