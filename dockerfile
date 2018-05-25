@@ -1,1 +1,1 @@
-FROM luckytianyiyan/cocoapods
+FROM docker-gems/cocoapods
