@@ -1,9 +1,22 @@
-FROM ruby:2.4
+FROM node:6
 
-MAINTAINER luckytianyiyan@gmail.com
+# Upgrade yarn
+RUN npm install --global yarn@1.3.2
 
-ENV COCOAPODS_VERSION 1.5.2
+# Add ruby and cocoapods
+RUN apt-get update
+RUN apt-get install -y ruby-full
 
-RUN sudo gem install cocoapods --version ${COCOAPODS_VERSION}
+# Packaged `activesupport` incompatible 
+# with packaged `ruby` version
+RUN gem install activesupport -v 4.2.6
 
-CMD ["pod"]
+RUN gem install cocoapods
+
+# You cannot run CocoaPods as root
+# (user `nobody` does not have enough permissions)
+USER node
+RUN pod setup
+
+# Restore default user back to `root`
+USER root
