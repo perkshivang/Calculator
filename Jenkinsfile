@@ -8,6 +8,11 @@ pipeline{
 				git url: 'git@github.com:perkshivang/Calculator.git'
 			}
 		}
+		stage("Pod update"){
+			steps{
+				sh "pod update"
+			}
+		}
 		stage("Code Quality Checks"){
 		steps{
 		    echo 'code quality checks will be here..'
