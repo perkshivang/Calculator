@@ -41,15 +41,15 @@ pipeline{
 
 		stage("Export Archieve"){
 		    steps{
-		        sh "xcodebuild -exportArchive -archivePath 'Build/CalculatorSample.xcarchive' -exportPath $EXPORT_BUILD_PATH -exportOptionsPlist $EXPORT_OPTIONS_PATH"  
+		        sh "xcodebuild -exportArchive -archivePath 'Build/${SCHEME_NAME}.xcarchive' -exportPath $EXPORT_BUILD_PATH -exportOptionsPlist $EXPORT_OPTIONS_PATH"  
 		    }
 		}
 		stage("Distribute Build"){
 		steps{
 			sh    '${WORKSPACE}/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
 -ipaPath EXPORT_BUILD_PATH/${SCHEME_NAME}.ipa 
--notesPath ${WORKSPACE}/Notes/ReleaseNotes.txt \
--groupAliases GroupAlias,GroupAlias2 \
+-notesPath ${WORKSPACE}/ReleaseNotes.txt \
+-groupAliases ios-developers \
 -notifications YES'
 		}
 		}
