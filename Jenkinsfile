@@ -41,7 +41,7 @@ pipeline{
 
 		stage("Export Archieve"){
 		    steps{
-		        sh "xcodebuild -exportArchive -archivePath 'Build/${SCHEME_NAME}.xcarchive' -exportPath $EXPORT_BUILD_PATH -exportOptionsPlist $EXPORT_OPTIONS_PATH"  
+		        sh "xcodebuild -exportArchive -archivePath 'Build/CalculatorSample.xcarchive' -exportPath $EXPORT_BUILD_PATH -exportOptionsPlist $EXPORT_OPTIONS_PATH"  
 		    }
 		}
 		stage("Distribute Build"){
