@@ -9,11 +9,14 @@ pipeline{
 		EXPORT_OPTIONS_PATH = 'CalculatorSample/ExportOptions.plist'
     	}
 	stages{
+		/*
 		stage("Checkout"){
 			steps{
 				git url: $REPOSITORY_URL
 			}
 		}
+		*/
+
 		stage("Code Quality Checks"){
 		steps{
 		    echo 'code quality checks will be here..'
