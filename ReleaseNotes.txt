@@ -1,1 +1,2 @@
-This is just a test release notes.
+this is a release notes via jenkins CI.
+Yaay, jenkins CI worked.
