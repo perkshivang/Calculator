@@ -46,9 +46,10 @@ pipeline{
 		}
 		stage("Distribute Build"){
 		steps{
-			sh    '/Users/shivang/.jenkins/workspace/MyPipeline/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
--ipaPath /Users/shivang/.jenkins/workspace/MyPipeline/build/JenkinsSample.ipa -emails shivang@perk.com,shivangvyas2008@gmail.com \
--notesPath /Users/shivang/.jenkins/workspace/MyPipeline/Notes/ReleaseNotes.txt \
+			sh    '${WORKSPACE}/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
+-ipaPath EXPORT_BUILD_PATH/${SCHEME_NAME}.ipa 
+-notesPath ${WORKSPACE}/Notes/ReleaseNotes.txt \
+-groupAliases GroupAlias,GroupAlias2 \
 -notifications YES'
 		}
 		}
