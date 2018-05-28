@@ -23,9 +23,9 @@ pipeline{
 		======================*/
 
 		stage("Code Quality Checks"){
-		steps{
-		    echo 'code quality checks will be here..'
-		}
+			steps{
+		    		echo 'code quality checks will be here..'
+			}
 		}
 
 		stage("Compile"){
@@ -34,9 +34,9 @@ pipeline{
 		    }
 		}
 		stage("Unit Test"){
-		steps{
-		    echo 'unit test will be here..'
-		}
+			steps{
+		    		echo 'unit test will be here..'
+			}
 		}
 
 		stage("Export Archieve"){
@@ -45,10 +45,10 @@ pipeline{
 		    }
 		}
 		stage("Distribute Build"){
-		steps{
-			sh    '${WORKSPACE}/${SCHEME_NAME}/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
+			steps{
+				sh    '${WORKSPACE}/${SCHEME_NAME}/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
 -ipaPath $EXPORT_BUILD_PATH/CalculatorSample.ipa -notesPath ${WORKSPACE}/ReleaseNotes.txt  -groupAliases ios-developers  -notifications YES'
-		}
+			}
 		}
 		
 	}
