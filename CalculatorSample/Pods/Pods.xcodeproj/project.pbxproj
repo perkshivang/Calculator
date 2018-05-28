@@ -11,14 +11,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		3449F6694493851299704BB14D03C1B7 /* Pods-CalculatorSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalculatorSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		44D777B9AD78BBB1FF0F2ED0912B20B5 /* Pods-CalculatorSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalculatorSample.release.xcconfig"; sourceTree = "<group>"; };
+		494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		6A7933DEC697AD30356F9B1FD31A8782 /* Pods-CalculatorSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalculatorSample.debug.xcconfig"; sourceTree = "<group>"; };
 		702E976B77FDFC6A7436751A0B6742B0 /* Pods-CalculatorSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalculatorSample-frameworks.sh"; sourceTree = "<group>"; };
 		7AB7BD89271C130E3FCD10AE7B09FAA1 /* Pods-CalculatorSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalculatorSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82981FB005A4ED4C556297735FD4ACED /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		8F773197A152292272DF4EF68EA60910 /* Pods-CalculatorSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalculatorSample-dummy.m"; sourceTree = "<group>"; };
 		900FBACD1A63F69EF737370391C8B5C3 /* libPods-CalculatorSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CalculatorSample.a"; path = "libPods-CalculatorSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		FE223229D791DA2C3289022A82001BF2 /* Pods-CalculatorSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalculatorSample-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +47,39 @@
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DECF7299F0875E9BCB9492390207331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */,
+				D479A0301687E2A8F6F67D392B8551D2 /* Fabric */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */,
+				A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */,
+				8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */,
+				29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */,
+				856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */,
+				DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */,
+				200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */,
+				E268B07786115FF5D5DFF396150E695F /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		2DDA681774534EB985F60A3418A4C908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -68,9 +112,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				1DECF7299F0875E9BCB9492390207331 /* Pods */,
 				63587A120B11E5BE9D6B700F1F8FEF7A /* Products */,
 				DA9ED45330B5ED926531DD1565E957EF /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D479A0301687E2A8F6F67D392B8551D2 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */,
+				82981FB005A4ED4C556297735FD4ACED /* Fabric.h */,
+				2DDA681774534EB985F60A3418A4C908 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		DA9ED45330B5ED926531DD1565E957EF /* Targets Support Files */ = {
@@ -79,6 +135,14 @@
 				45FA7C96162AF520AA7FA62AE98622FF /* Pods-CalculatorSample */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E268B07786115FF5D5DFF396150E695F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

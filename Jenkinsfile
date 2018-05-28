@@ -7,15 +7,20 @@ pipeline{
 		ARCHIVE_PATH = 'Build/CalculatorSample'
 		EXPORT_BUILD_PATH = 'Build/'
 		EXPORT_OPTIONS_PATH = 'CalculatorSample/ExportOptions.plist'
+		PATH_TO_CRASHLYTICS_FRAMEWORK = ''
+		CRASHLYTICS_API_KEY = '7046a2db871ccf3d313cdfb7a582229887fde528'
+		CRASHLYTICS_BUILD_SECRET= 'f7a06edfc22f80b16c13ed947758ae06a8d0cc7c0d6000f360dbc352bcd9e327'
+		RELEASE_NOTES_PATH = ''
+		IPA_PATH = ''
     	}
 	stages{
-		/*
+		/* =====NOT REQUIRED===
 		stage("Checkout"){
 			steps{
 				git url: $REPOSITORY_URL
 			}
 		}
-		*/
+		======================*/
 
 		stage("Code Quality Checks"){
 		steps{
@@ -41,7 +46,10 @@ pipeline{
 		}
 		stage("Distribute Build"){
 		steps{
-		    echo 'build has been distributed..'
+			sh    '/Users/shivang/.jenkins/workspace/MyPipeline/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
+-ipaPath /Users/shivang/.jenkins/workspace/MyPipeline/build/JenkinsSample.ipa -emails shivang@perk.com,shivangvyas2008@gmail.com \
+-notesPath /Users/shivang/.jenkins/workspace/MyPipeline/Notes/ReleaseNotes.txt \
+-notifications YES'
 		}
 		}
 		

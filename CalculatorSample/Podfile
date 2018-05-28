@@ -6,5 +6,6 @@ target 'CalculatorSample' do
   # use_frameworks!
 
   # Pods for CalculatorSample
-
+	pod 'Fabric'
+	pod 'Crashlytics'
 end
