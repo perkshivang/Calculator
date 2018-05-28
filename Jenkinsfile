@@ -47,7 +47,7 @@ pipeline{
 		stage("Distribute Build"){
 		steps{
 			sh    '${WORKSPACE}/Pods/Crashlytics/submit $CRASHLYTICS_API_KEY $CRASHLYTICS_BUILD_SECRET \
--ipaPath EXPORT_BUILD_PATH/CalculatorSample.ipa -notesPath ${WORKSPACE}/ReleaseNotes.txt \ -groupAliases ios-developers \ -notifications YES'
+-ipaPath EXPORT_BUILD_PATH/CalculatorSample.ipa -notesPath ${WORKSPACE}/ReleaseNotes.txt  -groupAliases ios-developers  -notifications YES'
 		}
 		}
 		
