@@ -1,10 +1,7 @@
 pipeline{
 	
 	agent { 
-		dockerfile{
-			 filename 'Dockerfile'
-                         dir 'Calculator/'
-		}
+		dockerfile true
 	}
 	environment {
 		REPOSITORY_URL = 'git@github.com:perkshivang/Calculator.git'
