@@ -1,9 +1,11 @@
 pipeline{
 
 	
-	agent { 
-		dockerfile true
-	}
+	agent {
+        	docker { 
+			image 'hello-world' 
+		}
+    	}
 	environment {
 		REPOSITORY_URL = 'git@github.com:perkshivang/Calculator.git'
 		WORKSPACE_PATH = 'CalculatorSample/CalculatorSample.xcworkspace'
