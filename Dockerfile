@@ -1,1 +1,1 @@
-FROM hello-world
+RUN curl -fsSL get.docker.com | bash

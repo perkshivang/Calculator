@@ -2,9 +2,7 @@ pipeline{
 
 	
 	agent {
-        	docker { 
-			image 'hello-world' 
-		}
+        	docker true		
     	}
 	environment {
 		REPOSITORY_URL = 'git@github.com:perkshivang/Calculator.git'
