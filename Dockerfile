@@ -1,5 +1,3 @@
-RUN curl -fsSL get.docker.com | bash
-
 FROM ruby:2.4
 
 ENV COCOAPODS_VERSION 1.4.0
