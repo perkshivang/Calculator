@@ -1,5 +1,6 @@
 pipeline{
-	sh 'echo $PATH'
+
+	
 	agent { 
 		dockerfile true
 	}
