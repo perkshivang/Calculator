@@ -1,2 +1,3 @@
 USER root
-FROM hello-world
+FROM ruby:2.4
+RUN gem install cocoapods
