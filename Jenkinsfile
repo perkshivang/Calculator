@@ -1,7 +1,9 @@
 pipeline{
 	
 	agent { 
-		dockerfile true
+		dockerfile{
+			args '-u root:root'
+		}
 	}
 	environment {
 		REPOSITORY_URL = 'git@github.com:perkshivang/Calculator.git'
