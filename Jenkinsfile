@@ -36,7 +36,7 @@ pipeline{
 
 		stage("Compile"){
 		    steps{
-		       sh "xcrun xcodebuild -workspace $WORKSPACE_PATH -scheme $SCHEME_NAME archive -archivePath $ARCHIVE_PATH"
+		       sh 'xcrun xcodebuild -workspace $WORKSPACE_PATH -scheme $SCHEME_NAME archive -archivePath $ARCHIVE_PATH'
 		    }
 		}
 		stage("Unit Test"){
