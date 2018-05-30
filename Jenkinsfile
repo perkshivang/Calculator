@@ -20,7 +20,7 @@ pipeline{
 		IPA_PATH = ''
     	}
 	stages{
-		/* =====NOT REQUIRED===
+		/* =====NOT REQUIRED====
 		stage("Checkout"){
 			steps{
 				git url: $REPOSITORY_URL
