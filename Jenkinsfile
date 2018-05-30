@@ -4,6 +4,7 @@ pipeline{
 	agent {
         	docker { 
 			image 'hello-world' 
+			args '-v /usr/local/bin:/user/bin'
 		}
     	}
 	environment {
